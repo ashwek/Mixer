@@ -1,5 +1,47 @@
 # Mixer
 
+**Ever thought of listening to 2 songs at the same time??** Well now you can.
+
+Wav file can have multiple channels. If a wav file has 2 channels, & you are using headphones to listen to the audio, both the channels are played independently on the left & right side of the headphones.
+
+[mix.cpp](https://github.com/ashwek/Mixer/blob/master/mix.cpp) takes 2 wav files as input and produces a third wav file as output. This output wav file has 2 channels. The first channel is composed of the the first input wav file & the 2nd channel is composed of the 2nd input wav file.
+
+So when you listen to the output wav files, you can listen to 2 different songs (audio files) at the same time. One playing on the left side of the headphone & the other on the right side of the headphone.
+
+<table>
+  <tr>
+    <th colspan="2">Demo</th>
+  </tr>
+  <tr>
+    <th>Input File 1</th>
+    <td><a href="https://github.com/ashwek/Mixer/blob/master/demo/song1.wav">demo / song1.wav</a></td>
+  </tr>
+  <tr>
+    <th>Input File 1<br />Wave diagram</th>
+    <td><img src="https://raw.githubusercontent.com/ashwek/Mixer/master/demo/song1%20-%20wave.png" height="200" /></td>
+  </tr>
+  <tr>
+    <th>Input File 2</th>
+    <td><a href="https://github.com/ashwek/Mixer/blob/master/demo/song2.wav">demo / song2.wav</a></td>
+  </tr>
+  <tr>
+    <th>Input File 2<br />Wave diagram</th>
+    <td><img src="https://raw.githubusercontent.com/ashwek/Mixer/master/demo/song2%20-%20wave.png" height="200" /></td>
+  </tr>
+  <tr>
+    <th>Output File</th>
+    <td><a href="https://github.com/ashwek/Mixer/blob/master/demo/song1%20%2B%20song2.wav">demo / song1 + song2.wav</a></td>
+  </tr>
+  <tr>
+    <th>Output File<br />Wave diagram</th>
+    <td><img src="https://raw.githubusercontent.com/ashwek/Mixer/master/demo/song1%20%2B%20song2%20-%20wave.png" height="200" /></td>
+  </tr>
+</table>
+<br />
+
+----
+<br />  
+
 # Stereo to Mono
 
 [stereo_to_mono.cpp](https://github.com/ashwek/Mixer/blob/master/stereo_to_mono.cpp) is a C++ code which can convert a **stereo Wav file** to a **mono Wav file**.
@@ -15,6 +57,9 @@ Data is stored in channels in a wav file. If a wav file has 2 channels, both the
 But some people prefer mono over stereo. Stereo can be converted to mono by mixing both the channels of the stereo and forming a single mono channel. The data read from wav file has to be converted into Fractional Binary Fixed-Point Numbers[\[3\]](#3) before mixing it into a single channel.
 
 <table>
+  <tr>
+    <th colspan="2">Demo</th>
+  </tr>
   <tr>
     <th>Input Stereo file</th>
     <td><a href="https://github.com/ashwek/Mixer/blob/master/demo/stereo_file.wav">demo / stereo_file.wav</a></td>
